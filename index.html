@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="./imagens/pinceis.png" alt="pincéis preto e branco">
+            <h1>Laura Beauty</h1>
+            <form>
+                <input type="search" placeholder="Busque no site">
+                <button type="submit">Pesquisar</button>
+            </form>
+            <div class="botao-menu">
+                <button type="button">Abrir menu</button>
+            </div>
+        </div>
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    Maquiagens
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Acessórios</a>
+                        </li>
+                        <li>
+                            <a href="#">Boca</a>
+                        </li>
+                        <li>
+                            <a href="#">kit maquiagens</a>
+                        </li>
+                    </ul>
+                </li>
+            <li>
+                skincare
+                <ul class="submenu">
+                    <li>
+                        <a href="#">Mãos</a>
+                    </li>
+                    <li>
+                        <a href="#">Lavagem de rosto</a>
+                    </li>
+                    <li>
+                        <a href="#">Massageador facial</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </nav>
+    </header>
+    <section id="sobre-nos" class="container sobre-nos">
+        <img class="fachada-da-loja" src="./imagens/fachada-loja.jpg" alt="fachada loja de maquiagem">
+        <div class="texto-sobre-loja">
+            <h2>Sobre a loja</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, omnis. Nulla atque vero ratione ab libero cum suscipit magni eligendi rerum placeat itaque culpa assumenda officiis nisi, explicabo similique eius?</p>
+        </div>
+    </section>
+    <section class="container produtos">
+        <div class="texto-produto">
+            <h2>Produtos</h2>
+        </div>
+        <div>
+            <ul class="produtos" >
+                    <li>
+                        <img src="./imagens/kitDupla.png" alt="Dois produtos para skincare">
+                        <h3>KIT DUPLA LIMPEZA</h3>
+                        <div class="preco">
+                            <strong>R$ 211,99</strong>
+                        </div>
+                        <button  type="button">Adicionar ao carrinho</button>
+                    </li>
+                    <li>
+                        <img src="./imagens/meltGrape.png" alt="Creme meltGrape">
+                        <h3>MELT GRAPE</h3>
+                        <div class="preco">
+                            <strong>R$ 149.90</strong>
+                        </div>
+                        <button  type="button">Adicionar ao carrinho</button>
+                    </li>
+                    <li class="item-central">
+                        <img src="./imagens/mini-kit.png" alt="Mini kit para skincare">
+                        <h3>MINI KIT BM SKIN</h3>
+                        <div class="preco">
+                            <strong>R$ 129,90</strong>
+                        </div>
+                        <button  type="button">Adicionar ao carrinho</button>
+                    </li>
+                    <li>
+                        <img src="./imagens/gelLimpeza.png" alt="gel para limpeza">
+                        <h3>GEL DE LIMPEZA</h3>
+                        <div class="preco">
+                            <strong>R$ 84,90</strong>
+                        </div>
+                        <button type="button">Adicionar ao carrinho</button>
+                    </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>2024 &copy; Pedro - Todos os direitos reservados</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu button').click(function(){
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>
